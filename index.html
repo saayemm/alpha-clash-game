@@ -11,7 +11,7 @@
     <!-- Custom CSS -->
      <link rel="stylesheet" href="styles/style.css">
 </head>
-<body class="max-h-screen bg-[#010312] font-poppins">
+<body class="h-screen bg-[#010312] font-poppins">
     <main class="bg-[#010312] bg-no-repeat bg-center bg-[url(images/background.png)]">
         <!-- Home Screen -->
         <section id="home-screen" class="min-h-screen text-white flex justify-center items-center">
@@ -19,12 +19,17 @@
                 <h1 class="text-8xl font-anton uppercase">Alpha Clash Pro Type Game</h1>
             <p>Unlesh your keyboard Kung Fu : Press "Enter" to play</p>
             <button onclick="play()" class="btn">Play Now</button>
+
+            <div></div>
+                <p class="text-white font-bold 
+                text-2xl mt-4 mb-8 pb-8">Developed by <span class= "text-fuchsia-500 pl-1"> Sayem</span></p>
+            </div>
             </div>
 
         </section>
         <!-- Play Ground Start -->
-        <section id="play-ground" class="hidden">
-            <div class="flex flex-col items-center gap-20 pt-16">
+        <section id="play-ground" class="hidden h-screen">
+            <div class="flex flex-col items-center gap-8 pt-8">
                 <!-- Screen -->
                 <div class="artboard artboard-horizontal phone-6 border-[16px] rounded-2xl border-[#010313cc]
                 bg-[#ffffffcc]">
@@ -86,11 +91,13 @@
                         <span id="current-score">0</span>
                       </button>
             </div>
+
+            
            
     
         </section>
         <!-- Play Ground End -->
-        <section id="final-score" class="score  text-white flex flex-col gap-8 min-h-screen bg-[#ffffff33] 
+        <section id="final-score" class="score h-screen text-white flex flex-col gap-8 min-h-screen bg-[#ffffff33] 
         justify-center items-center hidden">
             <div class="text-center space-y-8 bg-[#ffffff33] p-8 rounded-2xl">
                 <h1 class="text-8xl"><span class="font-bold">Score :</span>
@@ -102,11 +109,7 @@
             
         </section>
 
-        <section> <div>
-            <p class=" flex justify-center items-end text-white font-bold 
-            text-2xl mt-4 pb-8">Developed by <span class= "text-fuchsia-500 pl-1"> Sayem</span></p>
-        </div>
-    </section>
+        
 
     </main>
     <script src="script/utility.js"></script>
